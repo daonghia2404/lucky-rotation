@@ -6,6 +6,7 @@ import error from './status/error';
 import authState from './auth';
 import userState from './user';
 import historyRotationState from './history-rotation';
+import configState from './config';
 import listWalletState from './list-wallet';
 
 const rootReducer = combineReducers({
@@ -16,6 +17,7 @@ const rootReducer = combineReducers({
   userState,
   historyRotationState,
   listWalletState,
+  configState,
 });
 
 export default rootReducer;

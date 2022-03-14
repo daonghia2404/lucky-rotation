@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu } from 'antd';
-import { HistoryOutlined, LogoutOutlined, UserOutlined, WalletOutlined } from '@ant-design/icons';
+import { HistoryOutlined, LogoutOutlined, SettingOutlined, UserOutlined, WalletOutlined } from '@ant-design/icons';
 
 import ImageLogo from '@/assets/images/logo.png';
 
@@ -62,6 +62,10 @@ const Sidebar = () => {
         >
           History Rotation
         </Menu.Item>
+        <Menu.Item key="setting" icon={<SettingOutlined />} onClick={() => handleNavigate(Paths.Setting)}>
+          Setting
+        </Menu.Item>
+
         <Menu.Item style={{ marginTop: 'auto' }} key="logout" icon={<LogoutOutlined />} onClick={handleOpenLogoutModal}>
           Logout
         </Menu.Item>

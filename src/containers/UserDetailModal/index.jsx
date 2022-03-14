@@ -28,9 +28,8 @@ const UserDetailModal = ({ type, visible, data, onSubmit, onClose }) => {
   };
 
   const handleSubmit = async () => {
-    await form.submit();
+    const submitValues = await form.validateFields();
 
-    const submitValues = form.getFieldsValue();
     const values = {
       ...submitValues,
       gender: submitValues?.gender?.value,
@@ -51,23 +50,15 @@ const UserDetailModal = ({ type, visible, data, onSubmit, onClose }) => {
   const handleActionUserSuccess = () => {
     showNotification(ETypeNotification.SUCCESS, isCreateUser ? 'Create User Successfully' : 'Update User Successfully');
     onSubmit?.();
+    form.resetFields();
   };
 
   useEffect(() => {
-    form.setFieldsValue(data);
+    form.setFieldsValue({
+      ...data,
+      birthday: data?.birthday ? moment(data.birthday) : null,
+    });
   }, [data]);
-
-  // "full_name": "User1",
-  // "phone": "092372323",
-  // "email": "user@gmail.com",
-  // "gender": "01",
-  // "birthday": "1992-10-20",
-  // "address": "dia chi",
-  // "province": "Ha noi"
-
-  // "id": 5,
-  // "user_code": "CDAG4084IKV0",
-  // "password": "123456",
 
   return (
     <Modal

@@ -24,6 +24,7 @@ const Login = lazy(() => retryLoadComponent(() => import('@/pages/Login')));
 const Users = lazy(() => retryLoadComponent(() => import('@/pages/Users')));
 const ListWallet = lazy(() => retryLoadComponent(() => import('@/pages/ListWallet')));
 const HistoryRotation = lazy(() => retryLoadComponent(() => import('@/pages/HistoryRotation')));
+const Setting = lazy(() => retryLoadComponent(() => import('@/pages/Setting')));
 
 export const LayoutPaths = {
   Auth: '/',
@@ -41,6 +42,7 @@ export const Paths = {
   Users: '/',
   ListWallet: '/list-wallet',
   HistoryRotation: '/history-rotation',
+  Setting: '/setting',
   Rest: '*',
 };
 
@@ -50,6 +52,7 @@ export const Pages = {
   Users,
   ListWallet,
   HistoryRotation,
+  Setting,
 };
 
 export const AuthRoute = ({ component: Component, ...rest }) => {
