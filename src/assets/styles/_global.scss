@@ -1,0 +1,69 @@
+@import '~antd/dist/antd.css';
+@import './fonts';
+@import './colors';
+@import './constants';
+@import './mixin';
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.col-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ant-table-thead>tr>th {
+  white-space: nowrap;
+}
+
+.ant-picker {
+  width: 100%;
+}

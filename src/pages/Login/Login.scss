@@ -1,0 +1,32 @@
+@import '../../assets/styles/global';
+
+.Login {
+  min-height: 100vh;
+
+  .ant-card {
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+  }
+
+  &-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: $primary;
+  }
+
+  &-logo {
+    margin: 0 auto 32px;
+    max-width: 300px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .ant-btn {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}

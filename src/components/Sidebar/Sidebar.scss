@@ -1,0 +1,40 @@
+@import '../../assets/styles/global';
+
+.Sidebar {
+  height: 75%;
+
+  &-logo {
+    width: 80%;
+    margin: 40px auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .ant-menu {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+
+    .ant-menu-item {
+      width: 100%;
+
+      &.ant-menu-item-selected {
+        background: transparent;
+      }
+
+      &:hover {
+        .ant-menu-title-content,
+        .anticon {
+          color: $primary;
+        }  
+      }
+
+      .ant-menu-title-content,
+      .anticon {
+        color: $white;
+      }
+    }
+  }
+}
