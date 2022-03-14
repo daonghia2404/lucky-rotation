@@ -23,6 +23,7 @@ const Home = lazy(() => retryLoadComponent(() => import('@/pages/Home')));
 const Login = lazy(() => retryLoadComponent(() => import('@/pages/Login')));
 const Users = lazy(() => retryLoadComponent(() => import('@/pages/Users')));
 const ListWallet = lazy(() => retryLoadComponent(() => import('@/pages/ListWallet')));
+const ListRotation = lazy(() => retryLoadComponent(() => import('@/pages/ListRotation')));
 const HistoryRotation = lazy(() => retryLoadComponent(() => import('@/pages/HistoryRotation')));
 const Setting = lazy(() => retryLoadComponent(() => import('@/pages/Setting')));
 
@@ -41,6 +42,7 @@ export const Paths = {
   Login: '/',
   Users: '/',
   ListWallet: '/list-wallet',
+  ListRotation: '/list-rotation',
   HistoryRotation: '/history-rotation',
   Setting: '/setting',
   Rest: '*',
@@ -51,6 +53,7 @@ export const Pages = {
   Login,
   Users,
   ListWallet,
+  ListRotation,
   HistoryRotation,
   Setting,
 };

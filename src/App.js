@@ -25,6 +25,7 @@ const App = () => {
         <Admin path={LayoutPaths.Admin}>
           <ProtectedRoute path={Paths.Users} component={Pages.Users} />
           <ProtectedRoute path={Paths.ListWallet} component={Pages.ListWallet} />
+          <ProtectedRoute path={Paths.ListRotation} component={Pages.ListRotation} />
           <ProtectedRoute path={Paths.HistoryRotation} component={Pages.HistoryRotation} />
           <ProtectedRoute path={Paths.Setting} component={Pages.Setting} />
           <Redirect noThrow from={Paths.Rest} to={`${Paths.Admin}${Paths.Users}`} />

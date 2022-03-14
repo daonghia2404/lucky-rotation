@@ -8,6 +8,7 @@ import userState from './user';
 import historyRotationState from './history-rotation';
 import configState from './config';
 import listWalletState from './list-wallet';
+import listRotationState from './list-rotation';
 
 const rootReducer = combineReducers({
   loading,
@@ -17,6 +18,7 @@ const rootReducer = combineReducers({
   userState,
   historyRotationState,
   listWalletState,
+  listRotationState,
   configState,
 });
 

@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { Menu } from 'antd';
-import { HistoryOutlined, LogoutOutlined, SettingOutlined, UserOutlined, WalletOutlined } from '@ant-design/icons';
+import {
+  ChromeOutlined,
+  HistoryOutlined,
+  LogoutOutlined,
+  SettingOutlined,
+  UserOutlined,
+  WalletOutlined,
+} from '@ant-design/icons';
 
 import ImageLogo from '@/assets/images/logo.png';
 
@@ -54,6 +61,9 @@ const Sidebar = () => {
         </Menu.Item>
         <Menu.Item key="list-wallet" icon={<WalletOutlined />} onClick={() => handleNavigate(Paths.ListWallet)}>
           List Wallet
+        </Menu.Item>
+        <Menu.Item key="list-rotation" icon={<ChromeOutlined />} onClick={() => handleNavigate(Paths.ListRotation)}>
+          List Rotation
         </Menu.Item>
         <Menu.Item
           key="history-rotation"
