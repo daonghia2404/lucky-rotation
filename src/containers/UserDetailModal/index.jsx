@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { DatePicker, Form, Input, Modal, Select } from 'antd';
+import { DatePicker, Form, Input, InputNumber, Modal, Select } from 'antd';
 import { ETypeUserDetailModal } from '@/containers/UserDetailModal/UserDetailModal.data';
 import { showNotification, validationRules } from '@/utils/functions';
 import { useDispatch, useSelector } from 'react-redux';
@@ -102,6 +102,9 @@ const UserDetailModal = ({ type, visible, data, onSubmit, onClose }) => {
         </Form.Item>
         <Form.Item label="Province" name="province">
           <Input placeholder="Please Enter Your Province" />
+        </Form.Item>
+        <Form.Item label="Coin" name="coin">
+          <InputNumber placeholder="Please Enter Your Coin" />
         </Form.Item>
       </Form>
     </Modal>
